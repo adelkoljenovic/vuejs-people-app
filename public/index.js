@@ -21,11 +21,23 @@ var HomePage = {
           bio: "Code Instructor",
           bioVisible: "true",
         }
-      ]
+      ],
+      newPerson: {name: "", bio: "", bioVisible: ""}
     };
   },
   created: function() {},
-  methods: {},
+  methods: {
+    addPerson: function() {
+      console.log("add a person");
+      var newPersonInfo = {
+        name: this.newPerson.name,
+        bio: this.newPerson.bio,
+        bioVisible: "true"
+
+      };
+      this.people.push(newPersonInfo);
+    }
+  },
   computed: {}
 };
 

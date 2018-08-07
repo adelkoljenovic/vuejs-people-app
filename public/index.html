@@ -25,7 +25,13 @@
     <div v-for="person in people">
       <p>Name: {{ person.name }}</p>
       <p>Bio: {{ person.bio }}</p>
-      <p>Boolean: {{ person.bioVisible }}</p>
+    </div>
+
+    <div>
+      Create a new person:
+      name: <input v-model="newPerson.name"> 
+      bio: <input v-model="newPerson.bio"> 
+      <button v-on:click="addPerson()">Add new person here</button>
     </div>
   </div>
 </template>
