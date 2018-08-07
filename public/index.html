@@ -22,5 +22,10 @@
 
     <h1>{{ message }}</h1>
 
+    <div v-for="person in people">
+      <p>Name: {{ person.name }}</p>
+      <p>Bio: {{ person.bio }}</p>
+      <p>Boolean: {{ person.bioVisible }}</p>
+    </div>
   </div>
 </template>

@@ -4,7 +4,24 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
-      message: "Welcome to Vue.js!"
+      message: "Welcome to Vue.js!",
+      people: [
+        {
+          name: "Matt Cories",
+          bio: "Accountant",
+          bioVisible: "true",
+        },
+        {
+          name: "Adel Kolj",
+          bio: "Branch Manager",
+          bioVisible: "true",
+        },
+        {
+          name: "Brian Rice",
+          bio: "Code Instructor",
+          bioVisible: "true",
+        }
+      ]
     };
   },
   created: function() {},
