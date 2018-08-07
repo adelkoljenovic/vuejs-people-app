@@ -36,6 +36,7 @@ var HomePage = {
 
       };
       this.people.push(newPersonInfo);
+      this.newPerson = {name: "", bio: "", bioVisible: "true"}
     }
   },
   computed: {}
